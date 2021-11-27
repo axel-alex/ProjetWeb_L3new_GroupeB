@@ -1,0 +1,77 @@
+header
+{
+    background-color: burlywood;
+}
+
+.bienvenue
+{
+    text-align: center;
+}
+
+.presentation
+{
+    margin-top: 15%;
+}
+
+td
+{
+    background-color: darkgray;
+    border: thick double;
+    border-radius: 30px;
+    border-style: outset;
+    background: linear-gradient(90deg, gray, white);
+    font-size: 30px;
+}
+td:hover
+{
+    background: linear-gradient(90deg, gold, white);
+    font-size: 35px;
+}
+
+.boutique
+{
+    height: 200px;
+    width: 250px;
+}
+.boutique:hover
+{
+    height: 300px;
+    width: 350px;
+}
+
+.logo_boutique
+{
+    height: 90px; 
+    width: 100px;
+}
+
+section
+{
+    display: flex;
+    border: 10px solid black;
+}
+
+.BoutonBoutique:active
+{
+    background-color: chartreuse;
+}
+
+body
+{
+    background-color: gray;
+    color: honeydew;
+    border: 5px solid blanchedalmond;
+}
+
+footer
+{
+    margin-top: 20%;
+    background-color: blanchedalmond;
+}
+
+.Apropos
+{
+    border:thick;
+    border-radius: 5%;
+    background: linear-gradient(90deg, red, white)
+}
