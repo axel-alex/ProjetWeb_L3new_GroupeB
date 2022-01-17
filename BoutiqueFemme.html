@@ -3,186 +3,466 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Accueil de votde boutique</title>
+        <title>Boutique Femme</title>
+        <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <header>
             <h1>Life Fashion😉</h1>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/life_fashion_logo.png" alt ="Logo de la boutique" class="logo_boutique">
+            <img src="./images/life_fashion_logo.png" alt ="Logo de la boutique" class="logo_boutique">
             <nav>
-                <table>
-                    <tr>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Accueil.html">Accueil</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/BoutiqueHomme.html">Boutique homme</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/BoutiqueFemme.html">Boutique femme</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Validation.html">Validation</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Recapitulatif.html">Récapitulatif</a></td>
-                    </tr>
-                </table>
+                <div class="en_tete">
+                    <a href="./Accueil.html" class="pages_principales">Accueil</a>
+                    <a href="./BoutiqueHomme.html" class="pages_principales">Boutique homme</a>
+                    <a href="./BoutiqueFemme.html" class="pages_principales">Boutique femme</a>
+                    <a href="./Validation.html" class="pages_principales">Validation</a>
+                    <a href="#datatable" class="pages_principales">Récapitulatif</a>
+                </div>
             </nav>
         </header>
-        
-        <section>
-            <h2>Jacket</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/JacketFemme/JacketFemme1.png" alt="JacketFemme1.png" class="boutique">
+        <div class="article">
+            <img src="./images/JacketFemme/JacketFemme1.png" alt="JacketFemme1.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Jacket femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="JF1">
+                    Type : <div id="typeJF1">Jacket femme</div><br>
+                    Prix : <div id="prixJF1">15$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_JF1"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_JF1"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererJF1();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Jacket</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/JacketFemme/JacketFemme2.png" alt="JacketFemme2.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/JacketFemme/JacketFemme2.png" alt="JacketFemme2.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Jacket femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="JF2">
+                    Type : <div id="typeJF2">Jacket femme</div><br>
+                    Prix : <div id="prixJF2">15$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_JF2"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_JF2"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererJF2();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Jacket</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/JacketFemme/JacketFemme3.png" alt="JacketFemme3.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/JacketFemme/JacketFemme3.png" alt="JacketFemme3.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Jacket femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="JF3">
+                    Type : <div id="typeJF3">Jacket femme</div><br>
+                    Prix : <div id="prixJF3">15$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_JF3"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_JF3"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererJF3();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Jacket</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/JacketFemme/JacketFemme4.png" alt="JacketFemme4.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/JacketFemme/JacketFemme4.png" alt="JacketFemme4.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Jacket femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="JF4">
+                    Type : <div id="typeJF4">Jacket femme</div><br>
+                    Prix : <div id="prixJF4">15$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_JF4"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_JF4"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererJF4();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Jacket</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/JacketFemme/JacketFemme5.png" alt="JacketFemme5.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/JacketFemme/JacketFemme5.png" alt="JacketFemme5.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Jacket femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="JF5">
+                    Type : <div id="typeJF5">Jacket femme</div><br>
+                    Prix : <div id="prixJF5">15$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_JF5"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_JF5"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererJF5();">
+                </form>
             </aside>
-        </section>
+        </div>
 
-        <section>
-            <h2>Pantalon</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/PantalonFemme/PantalonFemme1.png" alt="PantalonFemme1.png" class="boutique">
+        <div class="article">
+            <img src="./images/PantalonFemme/PantalonFemme1.png" alt="PantalonFemme1.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Pantalon femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="PF1">
+                    Type : <div id="typePF1">Pantalon femme</div><br>
+                    Prix : <div id="prixPF1">10$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_PF1"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_PF1"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererPF1();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Pantalon</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/PantalonFemme/PantalonFemme2.png" alt="PantalonFemme2.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/PantalonFemme/PantalonFemme2.png" alt="PantalonFemme2.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Pantalon femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="PF2">
+                    Type : <div id="typePF2">Pantalon femme</div><br>
+                    Prix : <div id="prixPF2">10$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_PF2"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_PF2"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererPF2();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Pantalon</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/PantalonFemme/PantalonFemme3.png" alt="PantalonFemme3.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/PantalonFemme/PantalonFemme3.png" alt="PantalonFemme3.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Pantalon femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="PF3">
+                    Type : <div id="typePF3">Pantalon femme</div><br>
+                    Prix : <div id="prixPF3">10$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_PF3"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_PF3"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererPF3();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Pantalon</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/PantalonFemme/PantalonFemme4.png" alt="PantalonFemme4.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/PantalonFemme/PantalonFemme4.png" alt="PantalonFemme4.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Pantalon femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="PF4">
+                    Type : <div id="typePF4">Pantalon femme</div><br>
+                    Prix : <div id="prixPF4">10$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_PF4"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_PF4"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererPF4();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>Pantalon</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/PantalonFemme/PantalonFemme5.png" alt="PantalonFemme5.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/PantalonFemme/PantalonFemme5.png" alt="PantalonFemme5.png" class="boutique">
             <aside>
-                <strong>Type :</strong> Pantalon femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="PF5">
+                    Type : <div id="typePF5">Pantalon femme</div><br>
+                    Prix : <div id="prixPF5">10$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_PF5"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_PF5"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererPF5();">
+                </form>
             </aside>
-        </section>
+        </div>
 
-        <section>
-            <h2>T-shirt</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/TshirtFemme/TshirtFemme1.png" alt="TshirtFemme1.png" class="boutique">
+        <div class="article">
+            <img src="./images/TshirtFemme/TshirtFemme1.png" alt="TshirtFemme1.png" class="boutique">
             <aside>
-                <strong>Type :</strong> T-shirt femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="TF1">
+                    Type : <div id="typeTF1">T-shirt femme</div><br>
+                    Prix : <div id="prixTF1">6$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_TF1"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_TF1"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererTF1();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>T-shirt</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/TshirtFemme/TshirtFemme2.png" alt="TshirtFemme2.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/TshirtFemme/TshirtFemme2.png" alt="TshirtFemme2.png" class="boutique">
             <aside>
-                <strong>Type :</strong> T-shirt femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="TF2">
+                    Type : <div id="typeTF2">T-shirt femme</div><br>
+                    Prix : <div id="prixTF2">6$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_TF2"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_TF2"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererTF2();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>T-shirt</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/TshirtFemme/TshirtFemme3.png" alt="TshirtFemme3.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/TshirtFemme/TshirtFemme3.png" alt="TshirtFemme3.png" class="boutique">
             <aside>
-                <strong>Type :</strong> T-shirt femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="TF3">
+                    Type : <div id="typeTF3">T-shirt femme</div><br>
+                    Prix : <div id="prixTF3">6$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_TF3"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_TF3"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererTF3();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>T-shirt</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/TshirtFemme/TshirtFemme4.png" alt="TshirtFemme4.png" class="boutique">
+        </div>
+        <div class="article"> 
+            <img src="./images/TshirtFemme/TshirtFemme4.png" alt="TshirtFemme4.png" class="boutique">
             <aside>
-                <strong>Type :</strong> T-shirt femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="TF4">
+                    Type : <div id="typeTF4">T-shirt femme</div><br>
+                    Prix : <div id="prixTF4">6$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_TF4"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_TF4"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererTF4();">
+                </form>
             </aside>
-        </section>
-        <section>
-            <h2>T-shirt</h2>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/TshirtFemme/TshirtFemme5.png" alt="TshirtFemme5.png" class="boutique">
+        </div>
+        <div class="article">
+            <img src="./images/TshirtFemme/TshirtFemme5.png" alt="TshirtFemme5.png" class="boutique">
             <aside>
-                <strong>Type :</strong> T-shirt femme<br>
-                <strong>Couleur : </strong> --<br>
-                <strong>Taille : </strong> XL<br>
-                <input type="button" value="Ajouter" class="BoutonBoutique">
+                <form action="#" name="TF5">
+                    Type : <div id="typeTF5">T-shirt femme</div><br>
+                    Prix : <div id="prixTF5">6$</div><br>
+                    <div>Couleur
+                        <select name="couleur" id="select_couleur_TF5"> 
+                            <option selected value="red"> red</option>
+                            <option value="Purple"> Purple</option>
+                            <option value="Pink"> Pink</option>
+                            <option value="Yellow"> Yellow</option>
+                            <option value="Green"> Green</option>
+                        </select>
+                    </div>
+                    <div>Taille
+                        <select name="taille" id="select_taille_TF5"> 
+                            <option selected value="S"> S </option>
+                            <option value="XL"> XL</option>
+                            <option value="M"> M</option>
+                            <option value="L"> L</option>
+                            <option value="XXL"> XXL</option>
+                        </select> 
+                    </div>
+                    <input type="button" value="Ajouter" class="BoutonBoutique" onclick="recupererTF5();">
+                </form>
             </aside>
-        </section>
-        
+        </div>
+        <div>
+            <h1 style="text-align: center;">Récapitulatif de vos achats</h1>
+            <table class="datatable" id="datatable">
+                <thead>
+                    <tr>
+                        <th class="celules">Type</th>
+                        <th class="celules">Couleur</th>
+                        <th class="celules">Taille</th>
+                        <th class="celules">Prix</th>
+                    </tr>
+                </thead>
+                <tbody id="datatable_tbody">
+                     
+                </tbody>
+            </table> 
+        </div>   
         <footer>
             <nav>
-                <table>
-                    <tr>
-                        <td class="Apropos"><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/A_Propos.html" class="a_propos">A propos</a></td>
-                    </tr>
-                </table>
+                <div><a href="./A_Propos.html" class="Apropos">A propos</a></div>
             </nav>
         </footer>
     </body>

@@ -4,30 +4,29 @@
         <meta charset="utf-8"/> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Page de validation</title>
+        <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
         <header>
             <h1>Life Fashion😉</h1>
-            <img src="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/images/life_fashion_logo.png" alt ="Logo de la boutique" class="logo_boutique">
+            <img src="./images/life_fashion_logo.png" alt ="Logo de la boutique" class="logo_boutique">
             <nav>
-                <table>
-                    <tr>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Accueil.html">Accueil</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/BoutiqueHomme.html">Boutique homme</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/BoutiqueFemme.html">Boutique femme</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Validation.html">Validation</a></td>
-                        <td><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/Recapitulatif.html">Récapitulatif</a></td>
-                    </tr>
-                </table>
+                <div class="en_tete">
+                    <a href="./Accueil.html" class="pages_principales">Accueil</a>
+                    <a href="./BoutiqueHomme.html" class="pages_principales">Boutique homme</a>
+                    <a href="./BoutiqueFemme.html" class="pages_principales">Boutique femme</a>
+                    <a href="./Validation.html" class="pages_principales">Validation</a>
+                    <a href="#footer" class="pages_principales">Récapitulatif</a>
+                </div>
             </nav>
         </header>
-
     <h1>Finalisez vos achats !</h1>
 
     <h2>Veuillez compléter le formulaire suivant</h2>
-    <form>
+    <form name="client" action="/" id="Client">
         <div>
             <label for="nom"><strong>Nom</strong></label><br>
             <input type="text" id="nom" name="nom_utilisateur" placeholder="Votre nom" maxlength="200" required>
@@ -69,13 +68,9 @@
             <button type="reset">Annuler</button>
         </div>
     </form>
-    <footer>
+    <footer id="footer">
         <nav>
-            <table>
-                <tr>
-                    <td class="Apropos"><a href="C:/Users/daoud/Documents/Efrei_Paris/L3_new/ProgrammationWeb/ProjetWeb/A_Propos.html" class="a_propos">A propos</a></td>
-                </tr>
-            </table>
+            <div><a href="./A_Propos.html" class="Apropos">A propos</a></div>
         </nav>
     </footer>
     </body>
